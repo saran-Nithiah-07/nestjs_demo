@@ -5,7 +5,7 @@ import { StudentModule } from './student/student.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/nest_practice'), StudentModule],
+  imports: [MongooseModule.forRoot('mongodb://localhost/student'), StudentModule],
   controllers: [AppController],
   providers: [AppService],
 })

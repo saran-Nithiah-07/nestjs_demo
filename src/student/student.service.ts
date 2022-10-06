@@ -26,7 +26,6 @@ export class StudentService {
     }
     
     async createStudent(data: StudentDTO): Promise<Student> {
-        const student =  new this.StudentModel();
-        return await student.save();
+        return await this.StudentModel.create(data);
     }
 }
